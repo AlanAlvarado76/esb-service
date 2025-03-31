@@ -8,10 +8,10 @@ import com.utd.ti.soa.esb_service.model.User;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/esb")
+@RequestMapping("user-service.railway.internal/api/v1/esb")
 public class ESBController {
     private final WebClient webClient = WebClient.builder()
-            .baseUrl("http://users:3000/api/users")
+            .baseUrl("user-service.railway.internal/api/users")
             .defaultHeader("Content-Type", "application/json")
             .build();
 
