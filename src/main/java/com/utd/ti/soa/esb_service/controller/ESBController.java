@@ -11,7 +11,7 @@ import java.util.List;
 @RequestMapping("/api/users")
 public class ESBController {
     private final WebClient webClient = WebClient.builder()
-            .baseUrl("https://user-service.railway.internal:6000/api/users")
+            .baseUrl("http://user-service.railway.internal:6000/api/users")
             .defaultHeader("Content-Type", "application/json")
             .build();
 
